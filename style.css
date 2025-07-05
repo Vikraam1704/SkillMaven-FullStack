@@ -1,0 +1,10 @@
+.link{
+    text-decoration: none;
+}
+*{
+    color: aqua;
+}
+#one, #two,a,.h2{
+    color: blue;
+    background-color: white;
+}
