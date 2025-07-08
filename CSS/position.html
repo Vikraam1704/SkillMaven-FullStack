@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        #Sticky{
+            position: sticky;
+            top:0;
+        }
+        #Fixed{
+            position: fixed;
+        }
+        #relative{
+            border: 2px solid green;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            height: 500px;
+        }
+        #absolute{
+            position: absolute;
+            border: 2px dotted red;
+            top: 100px;
+            left: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere magni, ipsam quia deleniti laborum cumque labore unde sunt esse? Facilis accusantium architecto dignissimos beatae accusamus maiores, illo alias a tempora!</p>
+    <div id="Sticky">
+        <h1>Sticky</h1>
+    </div>
+    <div id="Fixed">
+        <h1>Fixed</h1>
+    </div>
+    <div id="relative">
+        <h1>Relative</h1>
+        <div id="absolute">
+            <h1>Absolute</h1>
+        </div>
+    </div>
+</body>
+</html>
