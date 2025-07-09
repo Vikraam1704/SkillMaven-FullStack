@@ -3,6 +3,7 @@
 <head>
     <title>Document</title>
     <style>
+       
         .inline{
             display: inline;
             width: 20px;
@@ -15,7 +16,21 @@
         .Inline-Block{
             display: inline-block;
             background-color: coral;
-            width: 20px;
+            width: 200px;
+        }
+        .child{
+            border: 2px solid black;
+            padding: 20px;
+            width: 30px;
+            
+
+        }
+        .container{
+            display: flex;
+            height: 500px;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
         }
     </style>
 </head>
@@ -23,5 +38,11 @@
     <span class="inline">Inline</span>
     <span class="block">Block</span>
     <span class="Inline-Block">Inline-Block</span>
+
+    <div class="container">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+    </div>
 </body>
 </html>

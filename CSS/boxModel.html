@@ -2,21 +2,33 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <link rel="stylesheet" href="../style1.css">
     <style>
-        .Heading{
-            /* padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 10px;
-            padding-top: 10px; */
-            padding: 10px 20px;
-            border: 10px solid green;
-            margin: 10px 20px 30px 40px;
-            border-radius: 50px;
+        *{
+          background-color: blue;  
+        }
+        p{
+            color: white;
+        }
+        #one,.two,.three{
+            color: white;
+        }
+        #heading{
+            padding: 10px 20px 30px 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: 10px solid black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin: 10px;
+
         }
     </style>
 </head>
 <body>
-    <h1 class="Heading" style="background-color: white;">Skill Maven</h1>
+    <h1 id="heading" style="color: red;">Skill Maven</h1>
 
     <p>Lorem, <b>ipsum</b> <strong>dolor</strong> sit amet <i>consectetur</i> <em>adipisicing</em> elit. <q>Velit corporis tenetur ut autem quaerat tempore id libero qui accusantium facere doloremque similique, nulla dolorum eius molestiae iusto facilis minus cupiditate.
     Alias ducimus animi illum repellat nulla, officiis ullam eos doloribus exercitationem placeat, minima consequatur</q> <u>obcaecati</u> id voluptate delectus ipsa quasi distinctio saepe, tempora sapiente numquam asperiores recusandae totam magni! Est.
@@ -26,5 +38,10 @@
     <video src="../assets/video.mp4"controls width="250px"></video>
     <iframe src="https://www.skillmaven.in/" frameborder="3"></iframe>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/YbCF6OqTWug?si=cf6hHkIrCJyTaiVR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <ul>
+        <li id="one">One</li>
+        <li class="two">Two</li>
+        <li class="three">Three</li>
+    </ul>
 </body>
 </html>

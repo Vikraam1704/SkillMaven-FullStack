@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        .child {
+            background-color: red;
+            padding: 10px;
+        }
+        .container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        /* .home{
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        } */
+         .sidebar{
+            grid-row: 2/4;
+         }
+         .content{
+            grid-column: 2/5;
+            grid-row: 2/4;
+         }
+         .footer{
+            grid-column: 1/5;
+         }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child header"></div>
+        <div class="child sidebar"></div>
+        <div class="child content"></div>
+        <div class="child footer"></div>
+    </div>
+</body>
+
+</html>
