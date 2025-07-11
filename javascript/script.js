@@ -81,3 +81,49 @@ function add(a,b,c,d=10){
 }
 add(10,20,30,40)
 
+//Arrow Function 
+const sum = (a,b) => 
+    console.log(a+b)
+
+sum(20,40)
+
+//Loops
+
+//for, while, do-while
+let i=0;
+for(;i<=10;i++){ // initialization, condition,inc/dec
+    console.log(i);
+    // Statement
+}
+
+i=100;
+while(i>=1){
+    console.log(i)
+    i=i/2;
+}
+
+val = false
+do{
+    console.log("Hello From Do While");
+}while(val);
+
+// condition statement
+
+// if, if else, else if
+i=1;
+if(i%2===0){
+    console.log("even")
+}
+else{
+    console.log("odd")
+}
+marks = 21;
+if(marks>80){
+    console.log("O grade");
+}
+else if(marks>=35){
+    console.log("Pass")
+}
+else{
+    console.log("fail")
+}
