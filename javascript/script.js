@@ -127,3 +127,43 @@ else if(marks>=35){
 else{
     console.log("fail")
 }
+
+//Spread Operator
+let arr = [1,2,3,4,5,6];
+let arr2 = [...arr,7,8];
+console.log(arr)
+console.log(arr2)
+
+//Destructuring Operator
+var marks = [90,99,98,87,93];
+var [m1,m2,m3,m4,m5]=marks;
+console.log(m1)
+console.log(m2)
+console.log(m3)
+console.log(m4)
+console.log(m5)
+//map
+var double = arr.map((num)=>(
+    num*2
+)
+)
+console.log(double)
+
+//filter
+var even = arr.filter((num)=>(num%2===0))
+console.log(even)
+
+//reduce
+var add = arr.reduce((val,num)=>val+num,0)
+console.log(add)
+
+var choice = ['rock','paper','scissor'];
+var computerChoice = choice[Math.floor(Math.random()*3)];
+console.log(computerChoice);
+
+var details = async()=>{
+    var responce = await fetch("https://jsonplaceholder.typicode.com/users")
+    var users = await responce.json();
+    console.log(users)
+}
+details();
