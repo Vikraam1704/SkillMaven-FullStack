@@ -6,6 +6,29 @@
 <body>
     <button onclick="alert('Hello')">click me!</button>
 
-    <script src="script.js"></script>
+    <h1 id="header">Hello World!!</h1>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeText()">change Text</button>
+    <br><br>
+    <input type="text" id="task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="list">
+    </ul>
+    <script>
+        function changeColor(){
+            let head = document.getElementById('header');
+            head.style.color = "red";
+        }
+        function changeText(){
+            let head = document.getElementById('header');
+            head.innerText = (head.innerText==="Hello SkillMaven")?"Hello World!!":"Hello SkillMaven"
+        }
+        let addTask = () =>{
+            var data = document.getElementById('task').value;
+            var li = document.createElement("li");
+            li.innerHTML=data;
+            document.getElementById('list').append(li)
+        }
+    </script>
 </body>
 </html>
