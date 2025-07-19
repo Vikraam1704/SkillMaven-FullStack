@@ -9,7 +9,7 @@ const UseState = () => {
     <div>
         <h1 className="heading">{count}</h1>
         <button onClick={handleButtonClicked}>Increment</button>
-        <button onClick={()=>{setCount(count+1)}}>Increment</button>
+        <button onClick={()=>{setCount(count-1)}}>Decrement</button>
     </div>
   )
 }
