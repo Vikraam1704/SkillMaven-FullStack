@@ -7,6 +7,9 @@ import {Routes, Route} from 'react-router-dom'
 import About from './pages/About'
 import Skill from './pages/Skill'
 import Contact from './pages/Contact'
+import Login from './component/Login'
+import UseEffect from './hooks/UseEffect'
+import Hooks from './component/Hooks'
 const App = () => {
   return (
     <div>
@@ -19,6 +22,10 @@ const App = () => {
         <Route path='/about' element={<About />}/>
         <Route path='/skills' element={<Skill />}/>
         <Route path='/contact' element={<Contact />}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/useState' element={<UseState/>}/>
+        <Route path='/useEffect' element={<UseEffect/>}/>
+        <Route path='/hooks' element={<Hooks/>}/>
       </Routes>
 
     </div>
