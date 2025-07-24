@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react' //Module
 import Child from './component/Child'
 import UseState from './hooks/UseState'
 import Home from './pages/Home'
