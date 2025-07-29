@@ -4,11 +4,14 @@ PORT = 3000;
 app.use(express.json())
 const connectDB = require('./config/db')
 
-const userRoutes = require('./routes/userRoutes')
+const userRoutes = require('./routes/userRoutes');
+const todoRouter = require('./routes/todoRoutes');
 
 connectDB();
 
 app.use('/',userRoutes)
+
+app.use('/todos',todoRouter)
 app.get('/get',(req,res)=>{
     res.send("Hello")
 })
