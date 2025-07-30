@@ -26,7 +26,7 @@ const updateTodo = async(req,res)=>{
     try{
         const updated = await Todo.findByIdAndUpdate(req.params.id,req.body,{new:true})
         if(!updated) return res.status(404).json({message:'Todo not found'})
-        res.json({status:updated})
+        res.json(updated)
     } catch(err){
         res.status(500).json({
             error:err.message
