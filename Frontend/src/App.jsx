@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Login from './component/Login'
 import UseEffect from './hooks/UseEffect'
 import Hooks from './component/Hooks'
+import Todo from './component/Todo'
 const App = () => {
   return (
     <div>
@@ -25,6 +26,7 @@ const App = () => {
         <Route path='/login' element={<Login/>}/>
         <Route path='/useState' element={<UseState/>}/>
         <Route path='/useEffect' element={<UseEffect/>}/>
+        <Route path='/todo' element={<Todo/>}/>
         <Route path='/hooks' element={<Hooks/>}/>
       </Routes>
 
